@@ -22,7 +22,7 @@ print(completed.stdout.decode('utf-8'))
 completed = subprocess.run(['git', 'clone', 'https://github.com/CSSEGISandData/COVID-19.git', 'COVID-19'],                         stdout=subprocess.PIPE,)
 print(completed.stdout.decode('utf-8'))
  
-data = pd.read_csv('/mnt/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+data = pd.read_csv('COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
 
 
 print(data.shape)
@@ -59,7 +59,7 @@ plt.legend(labels,fontsize=12)
 
 #plt.axislabelsize('small')
 #graph = countries_selected.T.plot(title='selected countries - cumulative COVID cases as of latest date')
-plt.savefig('/mnt/results/cases.png')
+plt.savefig('results/cases.png')
 #plt.show()
 
 
