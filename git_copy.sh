@@ -1,1 +1,0 @@
-cp -a /mnt/. /repos/covid/
